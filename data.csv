@@ -1,6 +1,10 @@
 name,sesiones,nivel_git,color
 numeroteca,5,7,#FF0000
-cristinuca,1,-1,#FF00FF
+cristian,1,9,#FF00FF
 asier,5,4,#00FF00
 estela,0,4,#002464
+<<<<<<< HEAD
 cristian,0,5,#FFFF00
+=======
+maria,0,2,#122464
+>>>>>>> 7a2ea1116753f35b803d05e85ed0b05e1014c206
