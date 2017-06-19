@@ -73,6 +73,7 @@ function drawGraphic(container_width) {
       container_width = 600;
   }
 }
+
 	var city = "Bilbao";
 
 	// Margin convention: https://bl.ocks.org/mbostock/3019563
@@ -121,12 +122,12 @@ function drawGraphic(container_width) {
 		// Process the data, coerce them into numbers
 		data.forEach(function(d) {
 			d.renta_2013 = +d.nivel_git;
-			d.pop_2013 = +d.sesiones;
+			d.pop_2013 = +d.year_started_programing;
 		});
 
 		// Finding out the domain
-		//x.domain(d3.extent(data, function(d) { return d.pop_2013; })).nice();
-		x.domain([0,10]);
+		x.domain(d3.extent(data, function(d) { return d.year_started_programing; })).nice();
+		//x.domain([0,10]);
 		//y.domain(d3.extent(data, function(d) { return d.renta_2013; })).nice();
 		y.domain([0,10]);
 
